@@ -1,0 +1,77 @@
+disabledAI=1;
+//#include "defines.hpp"
+//#include "dialog.hpp"
+
+overviewText = "";
+overviewPicture = "ArmaTarkov4.jpg";
+
+class CfgLeaflets
+{
+ class Civ
+ {
+  text = "Text Message";
+  texture = "image.jpg";
+ }
+};
+allowFunctionsRecompile = 1;
+#include "gui\traders.hpp"
+#include "gui\trader.hpp"
+class CfgSounds {
+	sounds[] ={};
+
+
+	class ticktock {
+		name = "ticktock"; 
+		sound[] = {"sound\ticktock1.ogg", 50, 1}; 
+		titles[] = {};
+	};
+
+	class apr {
+		name = "apr"; 
+		sound[] = {"sound\apr.ogg", 0.3, 1}; 
+		titles[] = {};
+	};
+
+	class HoldTheLine {
+		name = "HoldTheLine"; 
+		sound[] = {"sound\holdtheline.ogg", 0.3, 1}; 
+		titles[] = {};
+	};
+
+	class Livin {
+		name = "Livin"; 
+		sound[] = {"sound\livin.ogg", 0.3, 1}; 
+		titles[] = {};
+	};
+
+	class veil {
+		name = "veil"; 
+		sound[] = {"sound\veil.ogg", 0.3, 1}; 
+		titles[] = {};
+	};
+
+	class rainy {
+		name = "rainy"; 
+		sound[] = {"sound\rainy.ogg", 0.3, 1}; 
+		titles[] = {};
+	};
+};
+
+
+class CfgFunctions
+{
+    class KEK
+    {
+    	class raid
+		{
+			file = "functions\raid";
+			class fade {};
+		};	
+	class gui
+		{
+			file = "functions\gui";
+			class tradeMenu {};
+			class trader{};
+		};			
+	};
+};		
